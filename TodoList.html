@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+    <link rel = "stylesheet" href="ToDoListStyle.css">
+    
+</head>
+<body>
+  
+    <button onclick = "handlers.toggleAll()">Toggle all</button>
+    
+    <button onclick = "handlers.addTodos()">Add todo</button>
+    <input type="text" id="addTodoInput">
+    <div>
+        <button onclick="handlers.changeTodos()">Change Todo</button>
+        <input type="text" id="changeTodoText">Text
+        <input type="number" id="changeTodoNumber">Number
+    </div>
+    <div>
+        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+        <input type="number" id="toggleCompleted">
+    </div>
+    <div id="theList">
+        <ul>
+        </ul>
+    </div>
+<script src="ToDoList.js"></script>
+      </body>
+</html>
